@@ -9,6 +9,7 @@ const CartPage = ({ navigation }) => {
       <View style={styles.textHeader}>
         <Text style={styles.text}>Cart</Text>
       </View>
+
       <View style={styles.listitem}>
         <View style={styles.itemlist}>
           <Image
@@ -41,17 +42,20 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
   listitem: {
-    padding: 25,
+    left:30,
+    overflow: "hidden",
+    backgroundColor: "#fff",
+    height: "15%",
+    width: "85%",
+    borderRadius: 20,
+    flexDirection: "row",
+ 
   },
   itemlist: {
-    overflow: "hidden",
-    height: "40%",
-    backgroundColor: "#fff",
-    borderRadius: 20,
     flexDirection: "row",
   },
   itemimg: {
-    width: "30%",
+    width: "70%",
     height: "100%",
   },
   listtext: {

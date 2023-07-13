@@ -2,7 +2,6 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, Image, Pressable } from "react-native";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
-import products from "../../../../data/Products";
 
 // create a component
 function MallBody() {
@@ -10,28 +9,19 @@ function MallBody() {
     <View style={styles.container}>
       <View style={styles.body}>
         <View style={styles.bodyItem}>
-          <View style={styles.ItemImage}>
-            <Image
-              style={styles.logo}
-              source={require("../../../../assets/logo.png")}
-              alt={products.name}
-            />
-          </View>
+          <Image
+            style={styles.logo}
+            source={require("../../../../assets/logo.png")}
+          />
           <View style={styles.Itemtext}>
             <Text style={{ fontWeight: "bold" }}>$100</Text>
 
-            <Text style={{ marginLeft: 30, fontWeight: "bold" }}>
+            <Text style={{ marginLeft: 15, fontWeight: "bold" }}>
               tên Sản Phẩm
             </Text>
           </View>
           <View style={styles.Itemcontact}>
             <Text>Mo ta</Text>
-            <FontAwesome
-              style={{ marginLeft: 20 }}
-              name="star"
-              color="#e32f45"
-              size={15}
-            />
           </View>
         </View>
       </View>
@@ -53,17 +43,14 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     padding: 10,
     overflow: "hidden",
-    height: "50%",
+    height: "200%",
     borderRadius: 20,
-  },
-  ItemImage: {
     justifyContent: "center",
     alignItems: "center",
   },
+
   Itemtext: {
     flexDirection: "row",
-    paddingLeft: 5,
-    paddingRight: 5,
   },
   logo: {
     width: "70%",

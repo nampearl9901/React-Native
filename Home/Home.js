@@ -7,13 +7,13 @@ import {
   Dimensions,
   TouchableOpacity,
 } from "react-native";
-import * as Animatable from "react-native-animatable";
+
 
 const Home = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Animatable.Image
+        <Image
           animation="bounceIn"
           duration="4000"
           source={require("../assets/logo.png")}
@@ -21,7 +21,7 @@ const Home = ({ navigation }) => {
           resizeMode="stretch"
         />
       </View>
-      <Animatable.View style={styles.footer} animation="fadeInUpBig">
+      <View style={styles.footer} animation="fadeInUpBig">
         <Text style={styles.title}>Welcome to vintage 1990</Text>
         <Text style={styles.text}>Sign in with accout</Text>
         <View style={styles.btn}>
@@ -32,7 +32,7 @@ const Home = ({ navigation }) => {
             <Text style={styles.textSign}>Get Started</Text>
           </TouchableOpacity>
         </View>
-      </Animatable.View>
+      </View>
     </View>
   );
 };

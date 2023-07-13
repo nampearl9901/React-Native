@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-import * as Animatable from "react-native-animatable";
+
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Feather from "react-native-vector-icons/Feather";
 
@@ -15,12 +15,12 @@ const Login = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Animatable.Text style={styles.text_header} animation="slideInLeft">
+        <Text style={styles.text_header} animation="slideInLeft">
           Welcome!
-        </Animatable.Text>
+        </Text>
       </View>
 
-      <Animatable.View style={styles.footer} animation="fadeInUpBig">
+      <View style={styles.footer} animation="fadeInUpBig">
         <Text style={styles.text_footer}>Email</Text>
         <View style={styles.action}>
           <FontAwesome name="user-o" color="#05375a" size={20} />
@@ -55,7 +55,7 @@ const Login = ({ navigation }) => {
             <Text>Register account</Text>
           </TouchableOpacity>
         </View>
-      </Animatable.View>
+      </View>
     </View>
   );
 };

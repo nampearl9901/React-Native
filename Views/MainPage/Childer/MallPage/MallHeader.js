@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
   },
   icons: {
     marginTop: 30,
+  padding:20,
   },
   textInput: {
     marginTop: 30,

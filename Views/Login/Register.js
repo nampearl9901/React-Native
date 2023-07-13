@@ -15,11 +15,11 @@ const Register = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Animatable.Text style={styles.text_header} animation="slideInLeft">
+        <Text style={styles.text_header} animation="slideInLeft">
           Register Now!
-        </Animatable.Text>
+        </Text>
       </View>
-      <Animatable.View style={styles.footer} animation="fadeInUpBig">
+      <View style={styles.footer} animation="fadeInUpBig">
         <Text style={styles.text_footer}>Email</Text>
         <View style={styles.action}>
           <FontAwesome name="user-o" color="#05375a" size={20} />
@@ -61,7 +61,7 @@ const Register = ({ navigation }) => {
             <Text style={styles.textSign}>Register</Text>
           </TouchableOpacity>
         </View>
-      </Animatable.View>
+      </View>
     </View>
   );
 };
